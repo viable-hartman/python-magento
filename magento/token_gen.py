@@ -25,7 +25,9 @@ from os import path
 from requests_oauthlib import OAuth1Session
 from pprint import pprint
 
-MAGENTO_HOST = 'https://hydrobuilder.com'
+# Step 0: Supply the full base URL for your Magento 1.9 / OpenMage store.
+MAGENTO_HOST = input('Please enter the FULL HTTPS url for your Storefront: ')
+
 MAGENTO_API_BASE = '%s/api/rest/' % MAGENTO_HOST
 # Get client_key, and client_secret from: Magento Admin > System > Web Services > REST - OAuth Consumers
 TOKFILE = 'tokens.json'
